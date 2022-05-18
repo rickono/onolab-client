@@ -1,0 +1,35 @@
+.contact {
+  &__slogan {
+    margin-bottom: 2rem;
+  }
+  &__category {
+    margin: 1rem 0;
+  }
+}
+
+.resources {
+  &__header {
+    margin: 1rem 0;
+  }
+
+  &__section {
+    margin: 0.6rem 0;
+  }
+
+  &__list {
+    display: flex;
+    line-height: 1.8;
+    margin-left: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    li {
+      background-color: #555;
+      color: white;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      padding: 0.4rem 1rem;
+      border-radius: 5px;
+    }
+  }
+}

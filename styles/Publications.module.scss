@@ -1,0 +1,42 @@
+.publication {
+  &__year {
+    margin: 1rem 0;
+  }
+
+  &__publication {
+    margin-bottom: 1rem;
+  }
+}
+
+.citation {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  a {
+    color: #6491d9;
+    text-decoration: underline;
+  }
+}
+
+.citations {
+  margin-top: 3rem;
+}
+
+.citation:first-child {
+  margin-top: 2rem;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.select_menu {
+  display: flex;
+}
+
+@media (max-width: 840px) {
+  .options {
+    display: none;
+  }
+}

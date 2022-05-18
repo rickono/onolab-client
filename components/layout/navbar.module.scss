@@ -1,0 +1,24 @@
+.navbar {
+  height: 4rem;
+  background-color: #333;
+  display: flex;
+  padding: 0 3%;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+
+  &__nav {
+    display: flex;
+  }
+
+  &__link {
+    padding: 0 1rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 840px) {
+  .navbar {
+    display: none;
+  }
+}
