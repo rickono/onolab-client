@@ -62,10 +62,15 @@ export default function Publications() {
           publication.entryTags.TITLE[0] == '{'
             ? publication.entryTags.TITLE[1]
             : publication.entryTags.TITLE[0],
-        author: publication.entryTags.AUTHOR,
-        firstAuthorLetter: publication.entryTags.AUTHOR[0],
-        journal: publication.entryTags.JOURNAL,
-        firstJournalLetter: publication.entryTags.JOURNAL[0],
+        author: publication.entryTags.AUTHOR ?? '',
+        firstAuthorLetter:
+          (publication.entryTags.AUTHOR?.[0] ?? '') == '{'
+            ? publication.entryTags.AUTHOR[1]
+            : publication.entryTags.AUTHOR?.[0],
+        journal: publication.entryTags.JOURNAL ?? '',
+        firstJournalLetter: (
+          publication.entryTags.JOURNAL?.[0] ?? ''
+        ).toUpperCase(),
         volume: publication.entryTags.VOLUME,
         pages: publication.entryTags.PAGES,
         year: publication.entryTags.YEAR,
