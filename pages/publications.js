@@ -157,6 +157,13 @@ export default function Publications() {
                         year,
                         url,
                       } = publication;
+                      const authorsArray = author
+                        .split(' and')
+                        .map((author) => author.split(',').reverse().join(' '));
+                      const authors =
+                        authorsArray.slice(0, -1).join(', ') +
+                        ', and ' +
+                        authorsArray.slice(-1)[0];
                       return (
                         <motion.p
                           // variants={fadeInUp}
@@ -164,13 +171,15 @@ export default function Publications() {
                           className={style.citation}
                           dangerouslySetInnerHTML={{
                             __html: `${latexParser(
-                              author
+                              authors
                             )}. (${year}) ${latexParser(
                               title
                             )}. <em>${latexParser(
                               journal
-                            )}</em>. <b>${volume}</b>, ${
-                              pages !== undefined ? pagesParser(pages) : ''
+                            )}</em>. <b>${volume}</b>${
+                              pages !== undefined
+                                ? `, ${pagesParser(pages)}`
+                                : ''
                             }. ${
                               url !== undefined
                                 ? '<a href=' + url + '>' + url + '</a>'

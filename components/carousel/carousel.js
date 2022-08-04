@@ -19,20 +19,22 @@ const Carousel = () => {
       console.log(page, direction);
       paginate(1);
       console.log(page, direction);
-    }, 3000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [page, direction]);
 
   const images = [
     {
       path: 'img/greece.jpg',
-      header: 'Ono Lab',
-      text: 'Greece',
+      header: 'Nysiros Island, Greece',
+      subtitle: 'Fall 2017',
+      text: 'We collected methane from volcanic fumaroles from Nysiros Island in Greece. Here, our methane isotopologue data suggests the methane is thermally equilibrated at the reservoir at 250°C (Beaudry et al., 2021, GCA).',
     },
     {
       path: 'img/iceland.jpg',
-      header: 'Ono Lab',
-      text: 'Iceland',
+      header: 'Kerlingafjöll, Iceland',
+      subtitle: 'Summer 2015',
+      text: 'Volcanic fumaroles contain a trace quantity of methane with an unknown origin. We collected methane from geothermal wells and volcanic fumaroles from Iceland (Many thanks for Andri Stefansson and Jens Fibig). Our methane isotopologue data suggests the methane is either thermogenic or abiotic in origin (Beaudry et al., 2021, GCA). Methane could be generated abiotically from H<sub>2</sub> and CO<sub>2</sub> within deep superheated gas and later mixed with subcritical meteoric fluids.',
     },
   ];
   const imageIndex = Math.abs(page) % images.length;
@@ -95,16 +97,25 @@ const Carousel = () => {
           >
             {images[imageIndex].header}
           </motion.h1>
-          <motion.h3
+          <motion.h2
+            key={`${images[imageIndex].subtitle}${imageIndex}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.35 }}
+            exit={{ opacity: 0 }}
+            className={style.carousel__subtitle}
+          >
+            {images[imageIndex].subtitle}
+          </motion.h2>
+          <motion.p
             key={images[imageIndex].text}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.35 }}
             exit={{ opacity: 0 }}
             className={style.carousel__text}
-          >
-            {images[imageIndex].text}
-          </motion.h3>
+            dangerouslySetInnerHTML={{ __html: images[imageIndex].text }}
+          ></motion.p>
         </motion.div>
         <motion.div
           className={`${style['carousel__button--left']} ${style['carousel__button']}`}

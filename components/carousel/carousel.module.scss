@@ -48,31 +48,41 @@
     font-size: 3rem;
   }
 
-  &__text {
+  &__subtitle {
     position: absolute;
     width: 100%;
-    padding: 0 3rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     color: white;
     top: calc(50% - 20px);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    // top: calc(50% - 20px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 }
 
 @media (max-width: 840px) {
   .carousel {
-    height: 60vh;
+    height: 80vh;
 
     &__header {
       font-size: 2rem;
-    }
-
-    &__text {
-      font-size: 1rem;
     }
   }
 }

@@ -9,7 +9,7 @@ const PersonCard = ({ person }) => {
       <div className={style['person-card__info']}>
         <h1>{person.name}</h1>
         <h3>{person.lab_role || ''}</h3>
-        <p>{person.bio}</p>
+        <p dangerouslySetInnerHTML={{ __html: person.bio }}></p>
       </div>
     </motion.div>
   );
