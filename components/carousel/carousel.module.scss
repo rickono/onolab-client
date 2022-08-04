@@ -10,7 +10,7 @@
     position: absolute;
     height: 100%;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: 50% 50%;
   }
 
   &__button {
@@ -43,7 +43,9 @@
     margin-right: auto;
     text-align: center;
     color: white;
-    top: calc(50% - 80px);
+    top: 50%;
+    transform: translateY(-100%);
+    padding: 0 1rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 3rem;
   }
@@ -54,8 +56,10 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding: 0 2rem;
     color: white;
-    top: calc(50% - 20px);
+    top: 50%;
+    transform: translateY(calc(100% - 10px));
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
   }
@@ -81,8 +85,19 @@
   .carousel {
     height: 80vh;
 
+    &__text {
+      text-align: justify;
+      padding: 0.5rem 1.4rem;
+    }
+
     &__header {
       font-size: 2rem;
+      top: 30%;
+    }
+
+    &__subtitle {
+      font-size: 1.5rem;
+      top: 30%;
     }
   }
 }

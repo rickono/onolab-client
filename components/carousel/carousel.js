@@ -34,7 +34,7 @@ const Carousel = () => {
       path: 'img/iceland.jpg',
       header: 'Kerlingafjöll, Iceland',
       subtitle: 'Summer 2015',
-      text: 'Volcanic fumaroles contain a trace quantity of methane with an unknown origin. We collected methane from geothermal wells and volcanic fumaroles from Iceland (Many thanks for Andri Stefansson and Jens Fibig). Our methane isotopologue data suggests the methane is either thermogenic or abiotic in origin (Beaudry et al., 2021, GCA). Methane could be generated abiotically from H<sub>2</sub> and CO<sub>2</sub> within deep superheated gas and later mixed with subcritical meteoric fluids.',
+      text: 'Volcanic fumaroles contain a trace quantity of methane with an unknown origin.  Our isotopologue data suggests methane could be generated abiotically from H2 and CO2 within deep superheated gas and later mixed with subcritical meteoric fluids (Beaudry et al., 2021, GCA).',
     },
   ];
   const imageIndex = Math.abs(page) % images.length;
@@ -43,7 +43,6 @@ const Carousel = () => {
     enter: (direction) => {
       return {
         x: direction > 0 ? 1000 : -1000,
-        opacity: 0,
       };
     },
     center: {
@@ -53,7 +52,6 @@ const Carousel = () => {
     exit: (direction) => {
       return {
         x: direction < 0 ? 1000 : -1000,
-        opacity: 0,
       };
     },
   };

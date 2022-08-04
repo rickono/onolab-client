@@ -24,6 +24,6 @@ const items = [
   { text: 'home', href: '/' },
   { text: 'publications', href: '/publications' },
   { text: 'people', href: '/people' },
-  // { text: 'facilities', href: '/facilities' },
+  { text: 'projects', href: '/projects' },
   { text: 'contact', href: '/contact' },
 ];
