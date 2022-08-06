@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from '../components/projectCard/projectCard.js';
+import ProjectCard from '../components/projectCard/projectCard';
 import utilStyles from '../styles/utils.module.css';
 import Layout from '../components/layout/layout';
 import { motion } from 'framer-motion';
@@ -9,7 +9,7 @@ import projects from '../data/projects';
 
 const Projects = () => {
   return (
-    <Layout>
+    <Layout title='Ono Lab | Projects'>
       <motion.div
         className={utilStyles.container}
         exit={{ opacity: 0 }}

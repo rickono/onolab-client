@@ -7,10 +7,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <Layout>
-      <Head>
-        <title>Ono Stable Isotope Laboratory</title>
-      </Head>
+    <Layout title='Ono Stable Isotope Laboratory'>
       <motion.div
         exit={{ opacity: 0 }}
         animate={{ opacity: 1 }}

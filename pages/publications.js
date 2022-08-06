@@ -89,13 +89,9 @@ export default function Publications() {
   );
 
   publications = _.groupBy(publications, groupBy);
-  const somestring = '<h1>Hello</h1>';
   return (
-    <Layout>
+    <Layout title='Ono Lab | Publications'>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <Head>
-          <title>Ono Stable Isotope Laboratory</title>
-        </Head>
         <motion.div className={utilStyles.container} variants={stagger}>
           <motion.h1
             initial={{ opacity: 0 }}

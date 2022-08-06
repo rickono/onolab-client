@@ -1,6 +1,8 @@
 import style from './projectCard.module.scss';
 import { motion } from 'framer-motion';
 import stagger from '../../animations/stagger';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectCard = ({ project }) => {
   return (
@@ -17,16 +19,17 @@ const ProjectCard = ({ project }) => {
         />
       )}
       <div className={style['project-card__info']}>
-        {/* <h1>{project.name}</h1> */}
         <p dangerouslySetInnerHTML={{ __html: project.description }}></p>
         {project.link && (
           <a
             href={project.link.url}
-            className={style['project-card__github-link']}
+            className={style['project-card__link']}
             rel='noopener noreferrer'
             target='_blank'
           >
             {project.link.label}
+            &nbsp;&nbsp;
+            <FontAwesomeIcon icon={faExternalLinkAlt} />
           </a>
         )}
       </div>

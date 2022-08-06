@@ -6,10 +6,7 @@ import { motion } from 'framer-motion';
 
 const about = () => {
   return (
-    <Layout>
-      <Head>
-        <title>Ono Lab | Contact</title>
-      </Head>
+    <Layout title='Ono Lab | Contact'>
       <motion.div
         className={utilStyles.container}
         exit={{ opacity: 0 }}

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Footer from './footer';
 import { MobileNav } from './mobilenav/mobileNav';
 
-const Layout = ({ children }) => {
+const Layout = ({ title, children }) => {
   return (
     <div>
       <Head>
@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
           href='https://fonts.googleapis.com/icon?family=Material+Icons'
         />
         <link rel='shortcut icon' href='/favicon.ico' />
+        <title>{title}</title>
       </Head>
       <MobileNav />
       <Navbar />

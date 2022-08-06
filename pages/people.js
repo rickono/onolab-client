@@ -17,7 +17,7 @@ const People = () => {
     return !person.current_member;
   });
   return (
-    <Layout>
+    <Layout title='Ono Lab | People'>
       <motion.div
         className={utilStyles.container}
         exit={{ opacity: 0 }}
