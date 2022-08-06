@@ -161,9 +161,9 @@ export default function Publications() {
                         .split(' and')
                         .map((author) => author.split(',').reverse().join(' '));
                       const authors =
-                        authorsArray.slice(0, -1).join(', ') +
-                        ', and ' +
-                        authorsArray.slice(-1)[0];
+                        authorsArray.length > 1 ? 
+                          authorsArray.slice(0, -1).join(', ') + ', and ' +
+                          authorsArray.slice(-1)[0] : authorsArray[0];
                       return (
                         <motion.p
                           // variants={fadeInUp}
