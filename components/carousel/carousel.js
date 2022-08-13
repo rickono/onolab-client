@@ -13,9 +13,9 @@ const Carousel = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log(page, direction);
-      paginate(1);
-      console.log(page, direction);
+      if (document.hasFocus()) {
+        paginate(1);
+      }
     }, 10000);
     return () => clearInterval(interval);
   }, [page, direction]);
