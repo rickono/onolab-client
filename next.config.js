@@ -1,5 +1,5 @@
 module.exports = {
   images: {
-    domains: ['harmon.mit.edu'],
+    domains: ['http://harmon.mit.edu:8090'],
   },
 };
