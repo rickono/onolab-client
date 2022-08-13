@@ -4,14 +4,14 @@ const people = [
     name: 'Shuhei Ono',
     lab_role: 'PI',
     bio: 'My job is to help people in the lab be creative and productive.',
-    img: 'http://ono.mit.edu/sites/default/files/documents/shapeimage_4.jpg',
+    img: '/people/ShuheiOno.jpg',
   },
   {
     current_member: true,
     name: 'Jeemin Rhim',
     lab_role: 'PhD student (EAPS), Class of 2020',
     bio: 'Jeemin is investigating the isotope effect associated with microbial methanogenesis. \n\n',
-    img: 'http://ono.mit.edu/sites/default/files/images/jeemin%20Aug%2017.jpg',
+    img: '/people/jeemin Aug 17.jpg',
   },
   {
     current_member: true,

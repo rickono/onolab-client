@@ -19,11 +19,36 @@ const media = [
   },
   {
     description:
+      'Potential of abiotic methane generation in hydrothermal settings at Deep Carbon 2019',
+    youtube: 'https://www.youtube.com/embed/gqthOkqIBDg',
+    link: {
+      url: 'https://www.youtube.com/watch?v=gqthOkqIBDg',
+      label: 'YouTube',
+    },
+  },
+  {
+    description: 'A Hot and Deep Origin of Methane in Seafloor Hydrothermal Springs (Feb 2018)',
+    img: 'https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201503/MIT-Methane-Source-01.jpg?itok=zLh1e-8A',
+    link: {
+      url: 'https://deepcarbon.net/feature/hot-and-deep-origin-methane-seafloor-hydrothermal-springs',
+      label: 'DCO News',
+    },
+  },
+  {
+    description:
       'Paul Gast Lecture at Goldschmidt 2017 in Paris (Summer, 2017)',
     youtube: 'https://www.youtube.com/embed/_bczhawbQg0',
     link: {
       url: 'https://www.youtube.com/watch?v=_bczhawbQg0',
       label: 'YouTube',
+    },
+  },
+  {
+    description: 'Rare isotopes offer clues to the chemistry of the planet. New lab tools bring exotic isotopic signatures into view. Jan 2016',
+    img: 'https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201503/MIT-Methane-Source-01.jpg?itok=zLh1e-8A',
+    link: {
+      url: 'https://www.science.org/doi/10.1126/science.351.6272.431',
+      label: 'Science',
     },
   },
   {
