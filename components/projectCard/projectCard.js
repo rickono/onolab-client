@@ -1,8 +1,7 @@
 import style from './projectCard.module.scss';
 import { motion } from 'framer-motion';
 import stagger from '../../animations/stagger';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { Icon } from '@iconify/react';
 
 const ProjectCard = ({ project }) => {
   return (
@@ -29,7 +28,7 @@ const ProjectCard = ({ project }) => {
           >
             {project.link.label}
             &nbsp;&nbsp;
-            <FontAwesomeIcon icon={faExternalLinkAlt} />
+            <Icon icon='eva:external-link-fill' />
           </a>
         )}
       </div>
