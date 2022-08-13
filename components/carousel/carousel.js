@@ -103,7 +103,7 @@ const Carousel = () => {
             alt={images[imageIndex].header}
             layout='fill'
             objectFit='cover'
-            priority
+            loading='eager'
           />
         </motion.div>
         <motion.div>
