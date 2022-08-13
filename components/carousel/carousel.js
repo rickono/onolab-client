@@ -1,11 +1,7 @@
 import style from './carousel.module.scss';
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faChevronLeft,
-  faChevronRight,
-} from '@fortawesome/free-solid-svg-icons';
+import { Icon } from '@iconify/react';
 import Image from 'next/image';
 
 const Carousel = () => {
@@ -26,31 +22,31 @@ const Carousel = () => {
 
   const images = [
     {
-      path: 'img/hawaii.png',
+      path: '/img/hawaii.png',
       header: 'Waikiki, Hawaii',
       subtitle: 'Summer 2022',
       text: 'Lab members past and present at Goldschmidt HI 2022 (from left, Ben Uveges, Lubna Shawer, Jeemin Rhim, Ellen Lalk).',
     },
     {
-      path: 'img/novascotia.jpg',
+      path: '/img/novascotia.jpg',
       header: 'Offshore Nova Scotia, Canada',
       subtitle: 'Summer 2021',
       text: 'The elevator basket brings up sediment cores from the ocean floor of the Scotian slope. We extract methane from the sediments to investigate its source and the deep biosphere.',
     },
     {
-      path: 'img/greece.jpg',
+      path: '/img/greece.jpg',
       header: 'Nysiros Island, Greece',
       subtitle: 'Fall 2017',
       text: 'We collected methane from volcanic fumaroles from Nysiros Island in Greece. Here, our methane isotopologue data suggests the methane is thermally equilibrated at the reservoir at 250°C (Beaudry et al., 2021, GCA).',
     },
     {
-      path: 'img/iceland.jpg',
+      path: '/img/iceland.jpg',
       header: 'Kerlingafjöll, Iceland',
       subtitle: 'Summer 2015',
       text: 'Volcanic fumaroles contain a trace quantity of methane with an unknown origin.  Our isotopologue data suggests methane could be generated abiotically from H2 and CO2 within deep superheated gas and later mixed with subcritical meteoric fluids (Beaudry et al., 2021, GCA).',
     },
     {
-      path: 'img/iceland2.jpeg',
+      path: '/img/iceland2.jpeg',
       header: 'Hellisheiði, Iceland',
       subtitle: 'Summer 2015',
       text: 'The Carbfix2 site at Hellisheiði power plant in Iceland, where CO<sub>2</sub> captured from the air and geothermal plants are injected into the basaltic aquifer and stored as carbonate minerals. From left, Mateo, Andri Stefánsson, Vanessa Sun, Shuhei Ono, Matěj Pěc.',
@@ -78,16 +74,15 @@ const Carousel = () => {
   return (
     <div className={style.carousel}>
       <AnimatePresence initial={false} custom={direction}>
-        <motion.img
+        <motion.div
           key={page}
-          src={images[imageIndex].path}
           custom={direction}
           variants={variants}
           initial='enter'
           animate='center'
           exit='exit'
           transition={{
-            x: { type: 'spring', stiffness: 100, damping: 200 },
+            x: { type: 'spring', damping: 12, stiffness: 50 },
             opacity: { duration: 0.3 },
           }}
           className={style.carousel__slide}
@@ -102,7 +97,15 @@ const Carousel = () => {
               paginate(-1);
             }
           }}
-        />
+        >
+          <Image
+            src={images[imageIndex].path}
+            alt={images[imageIndex].header}
+            layout='fill'
+            objectFit='cover'
+            loading='eager'
+          />
+        </motion.div>
         <motion.div>
           <motion.h1
             key={images[imageIndex].header}
@@ -141,7 +144,7 @@ const Carousel = () => {
           onClick={() => paginate(-1)}
           key={'buttonLeft'}
         >
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <Icon icon='akar-icons:chevron-left' />
         </motion.div>
         <motion.div
           className={`${style['carousel__button--right']} ${style['carousel__button']}`}
@@ -150,7 +153,7 @@ const Carousel = () => {
           onClick={() => paginate(1)}
           key={'buttonRight'}
         >
-          <FontAwesomeIcon icon={faChevronRight} />
+          <Icon icon='akar-icons:chevron-right' />
         </motion.div>
       </AnimatePresence>
     </div>
