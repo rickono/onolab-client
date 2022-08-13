@@ -21,6 +21,11 @@ const Navbar = () => {
             <a>PEOPLE</a>
           </li>
         </Link>
+        <Link href='/media'>
+          <li className={styles.navbar__link}>
+            <a>MEDIA</a>
+          </li>
+        </Link>
         {/* <Link href='/facilities'>
           <li className={styles.navbar__link}>
             <a>FACILITIES</a>

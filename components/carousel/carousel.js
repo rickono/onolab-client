@@ -6,6 +6,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
 
 const Carousel = () => {
   const [[page, direction], setPage] = useState([0, 0]);
