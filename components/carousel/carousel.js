@@ -28,6 +28,12 @@ const Carousel = () => {
       text: 'Lab members past and present at Goldschmidt HI 2022 (from left, Ben Uveges, Lubna Shawer, Jeemin Rhim, Ellen Lalk).',
     },
     {
+      path: '/img/iceland2.jpeg',
+      header: 'Hellisheiði, Iceland',
+      subtitle: 'Summer 2022',
+      text: 'The Carbfix2 site at Hellisheiði power plant in Iceland, where CO<sub>2</sub> captured from the air and geothermal plants are injected into the basaltic aquifer and stored as carbonate minerals. From left, Mateo, Andri Stefánsson, Vanessa Sun, Shuhei Ono, Matěj Pěc.',
+    },
+    {
       path: '/img/novascotia.jpg',
       header: 'Offshore Nova Scotia, Canada',
       subtitle: 'Summer 2021',
@@ -44,12 +50,6 @@ const Carousel = () => {
       header: 'Kerlingafjöll, Iceland',
       subtitle: 'Summer 2015',
       text: 'Volcanic fumaroles contain a trace quantity of methane with an unknown origin.  Our isotopologue data suggests methane could be generated abiotically from H2 and CO2 within deep superheated gas and later mixed with subcritical meteoric fluids (Beaudry et al., 2021, GCA).',
-    },
-    {
-      path: '/img/iceland2.jpeg',
-      header: 'Hellisheiði, Iceland',
-      subtitle: 'Summer 2015',
-      text: 'The Carbfix2 site at Hellisheiði power plant in Iceland, where CO<sub>2</sub> captured from the air and geothermal plants are injected into the basaltic aquifer and stored as carbonate minerals. From left, Mateo, Andri Stefánsson, Vanessa Sun, Shuhei Ono, Matěj Pěc.',
     },
   ];
   const imageIndex = Math.abs(page) % images.length;
