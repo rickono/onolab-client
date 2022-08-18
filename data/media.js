@@ -1,8 +1,8 @@
 const media = [
   {
     description:
-      'Shuhei received Teaching with Digital Technology Awards 2022 (April, 2022) ',
-    img: 'https://eapsweb.mit.edu/sites/default/files/styles/700x347_no_overlay/public/15038462194_6c0e47cbc7_o_1.jpg?itok=rvY5NLZY',
+      'Shuhei received teaching with digital technology award for internet of things air quality sensor used in 12.335/835 (April, 2022) ',
+    img: '/media/IOT_airQualitySensor.jpg',
     link: {
       url: 'https://eapsweb.mit.edu/news/2022/Teaching-with-digital-technology-awards-2022',
       label: 'MIT News',
@@ -28,7 +28,7 @@ const media = [
   },
   {
     description: 'A Hot and Deep Origin of Methane in Seafloor Hydrothermal Springs (Feb 2018)',
-    img: 'https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201503/MIT-Methane-Source-01.jpg?itok=zLh1e-8A',
+    img: 'https://deepcarbon.net/sites/dco.rpi.edu/files/ex1104_img_20110809t165529z_rovhd_shi_00.jpg',
     link: {
       url: 'https://deepcarbon.net/feature/hot-and-deep-origin-methane-seafloor-hydrothermal-springs',
       label: 'DCO News',
@@ -44,8 +44,8 @@ const media = [
     },
   },
   {
-    description: 'Rare isotopes offer clues to the chemistry of the planet. New lab tools bring exotic isotopic signatures into view. Jan 2016',
-    img: 'https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/201503/MIT-Methane-Source-01.jpg?itok=zLh1e-8A',
+    description: 'Article in <I>Science</I>, titled "New lab tools bring exotic isotopic signatures into view". Jan 2016',
+    img: '/media/Methane_TILDAS_LR.jpg',
     link: {
       url: 'https://www.science.org/doi/10.1126/science.351.6272.431',
       label: 'Science',

@@ -10,7 +10,7 @@ const projects = [
   },
   {
     description:
-      'Data for air quality sensor measuring CO<sub>2</sub> and particulate matter outside my office window at E25 of MIT.',
+      'Data for air quality sensor measuring CO<sub>2</sub> and particulate matter outside my office window at E25 of MIT. Update every day.',
     img: 'http://harmon.mit.edu:8090/AtmChem12335/CO2_cycles1.png',
     link: {
       url: 'http://harmon.mit.edu:8090/AtmChem12335/',
