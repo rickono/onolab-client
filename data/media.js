@@ -1,4 +1,25 @@
 const media = [
+
+  {
+    description:
+      'Shuhei was selected for 125th anniversary fellow from College of Earth and Mineral Sciences of Penn State (Oct. 2022)',
+    img: '/media/ShuheiLeeAtPSU.jpg',
+    link: {
+      url: 'https://www.ems.psu.edu/125Anniversary/125th-anniversary-fellows',
+      label: 'PSU 125th fellow',
+    },
+  },
+
+  {
+    description:
+      'A Container of Sensors Helps Students to Learn at Home during COVID (July 2022)',
+      youtube: 'https://www.youtube.com/embed/XO0_e9TTXEQ',
+    link: {
+      url: 'https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/container-sensors-helps-students-learn-home-during',
+      label: 'MIT Open learning',
+    },
+  },
+
   {
     description:
       'Shuhei received teaching with digital technology award for internet of things air quality sensor used in 12.335/835 (April, 2022) ',
