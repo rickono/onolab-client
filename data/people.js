@@ -52,7 +52,7 @@ const people = [
   {
     current_member: true,
     name: 'Kuma Ono',
-    lab_role: 'Puppy Lab',
+    lab_role: 'MIT Puppy Lab',
     bio: 'Kuma Ono guards our office and labs. \n\n',
     img: '/people/KumaOno.jpg',
   },
