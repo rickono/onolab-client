@@ -38,14 +38,14 @@ const people = [
     current_member: true,
     name: 'Sarah Gao',
     lab_role: 'UROP course 6',
-    bio: 'Sarah is working on reducing noise from our TILDAS using mashine learning',
+    bio: 'Sarah is working on reducing noise from our TILDAS using machine learning',
     img: '/people/SarahGao.jpg',
   },
   {
     current_member: true,
     name: 'Kevin Shao',
     lab_role: 'UROP course 6',
-    bio: 'Kevin is working on reducing noise from our TILDAS using mashine learning',
+    bio: 'Kevin is working on reducing noise from our TILDAS using machine learning',
     img: '/people/KevinShao.jpg',
   },
 
