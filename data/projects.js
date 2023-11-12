@@ -14,7 +14,7 @@ const projects = [
   {
     description:
       'An automated methane purification system that we use to clean up methane samples for TILDAS analysis',
-    img: 'media/methane_prep.jpg',
+    img: 'media/Methane_prep.jpg',
   },
 
   {
