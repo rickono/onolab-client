@@ -25,7 +25,7 @@ const Carousel = () => {
       path: '/img/iceland2.jpeg',
       header: 'Hellisheiði, Iceland',
       subtitle: 'Summer 2022',
-      text: 'The Carbfix2 site at Hellisheiði power plant in Iceland, where CO<sub>2</sub> captured from the air and geothermal plants are injected into the basaltic aquifer and stored as carbonate minerals. From left, Mateo, Andri Stefánsson, Vanessa Sun, Shuhei Ono, Matěj Pěc.',
+      text: 'The Carbfix2 site at Hellisheiði power plant in Iceland, where CO<sub>2</sub> captured from the air and geothermal plants are injected into the basaltic aquifer and stored as carbonate minerals.', // From left, Mateo, Andri Stefánsson, Vanessa Sun, Shuhei Ono, Matěj Pěc.',
     },
     {
       path: '/img/hawaii.png',

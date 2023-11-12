@@ -28,7 +28,7 @@ const about = () => {
         </ul>
         <h3 className={style.contact__category}>Mailing Address</h3>
         <p>
-          Building E25-641 Department of Earth, Atmospheric, and Planetary
+          Building 4-449 Department of Earth, Atmospheric, and Planetary
           Sciences Massachusetts Institute of Technology 77 Massachusetts
           Avenue, Cambridge, MA 02139
         </p>

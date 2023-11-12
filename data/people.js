@@ -15,11 +15,34 @@ const people = [
   },
   {
     current_member: true,
+    name: 'Angelina Serafini',
+    lab_role: 'PhD student EAPS',
+    bio: 'Angie is working on basalt carbonation and some isotopes',
+    img: '/people/Angie.jpg',
+  },
+  {
+  current_member: true,
+  name: 'Manlin Xu',
+  lab_role: 'PhD student EAPS',
+  bio: 'Manlin will work on deep methane cycles',
+  img: '/people/KumaOno.jpg',
+  },
+
+  {
+    current_member: true,
+    name: 'Andy Fong',
+    lab_role: 'UROP course 10',
+    bio: 'Andy works on olivine carbonation',
+    img: '/people/andyfong.jpg',
+    },
+
+  /* {
+    current_member: false,
     name: 'Vanessa Sun',
     lab_role: 'PhD student EAPS',
     bio: 'Vanessa is interested in carbon sequestration and is exploring her passion in isotopes.',
     img: '/people/VanessaSun.jpg',
-  },
+  }, */
   {
     current_member: true,
     name: 'Bill Olszewski',
@@ -28,21 +51,21 @@ const people = [
     img: '/people/Bill_Olzewski.jpg',
   },
   {
-    current_member: true,
+    current_member: false,
     name: 'Benjamin Uveges',
     lab_role: 'Postdoctoral Associate',
     bio: 'Ben is working on Archean S-MIF and early Proterozoic oxygenation event',
     img: '/people/BenUveges.jpg',
   },
   {
-    current_member: true,
+    current_member: false,
     name: 'Sarah Gao',
     lab_role: 'UROP course 6',
     bio: 'Sarah is working on reducing noise from our TILDAS using machine learning',
     img: '/people/SarahGao.jpg',
   },
   {
-    current_member: true,
+    current_member: false,
     name: 'Kevin Shao',
     lab_role: 'UROP course 6',
     bio: 'Kevin is working on reducing noise from our TILDAS using machine learning',
