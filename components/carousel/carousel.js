@@ -22,10 +22,22 @@ const Carousel = () => {
 
   const images = [
     {
-      path: '/img/iceland2.jpeg',
+      path: '/img/carbfix_injection_well.jpeg',
       header: 'Hellisheiði, Iceland',
-      subtitle: 'Summer 2022',
+      subtitle: 'August 2024',
       text: 'The Carbfix2 site at Hellisheiði power plant in Iceland, where CO<sub>2</sub> captured from the air and geothermal plants are injected into the basaltic aquifer and stored as carbonate minerals.', // From left, Mateo, Andri Stefánsson, Vanessa Sun, Shuhei Ono, Matěj Pěc.',
+    },
+    {
+      path: '/img/Carbfix_inside_injectionWell.jpg',
+      header: 'Hellisheiði, Iceland',
+      subtitle: 'August 2024',
+      text: 'Carbfix2 injection well at Hellisheiði power plant in Iceland',
+    },
+    {
+      path: '/img/pool_Chicago.jpg',
+      header: 'Goldschmidt 2024',
+      subtitle: 'August 2024',
+      text: 'Pool compeition for team MIT vs. Tohoku during Goldschmidt conference at Chicago',
     },
     {
       path: '/img/hawaii.png',
