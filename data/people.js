@@ -37,13 +37,6 @@ const people = [
     },
 
   {
-    current_member: false,
-    name: 'Vanessa Sun',
-    lab_role: 'PhD student EAPS',
-    bio: 'Vanessa is interested in carbon sequestration and is exploring her passion in isotopes.',
-    img: '/people/VanessaSun.jpg',
-  },
-  {
     current_member: true,
     name: 'Bill Olszewski',
     lab_role: 'Research Scientist',
