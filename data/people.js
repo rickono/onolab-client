@@ -13,6 +13,15 @@ const people = [
     bio: "Gareth will tell when exactly oxygen appeared in the Earth's atmosphere by analyzign S-MIF signals from drill core materials from South Africa. ",
     img: '/people/GarethIzon.jpg',
   },
+
+    {
+    current_member: true,
+    name: 'Orion Farr',
+    lab_role: 'Crosby Postdoc EAPS',
+    bio: 'Orion works on organic synthesis by green rust',
+    img: '/people/OrionFarr.jpg',
+  },
+
   {
     current_member: true,
     name: 'Angelina Serafini',
@@ -29,6 +38,22 @@ const people = [
   },
 
   {
+  current_member: true,
+  name: 'Anais Mobarak',
+  lab_role: 'PhD student EAPS',
+  bio: 'Anais works on Antigorite dissolution',
+  img: '/people/AnaisMobarak.jpg',
+  },
+
+  {
+    current_member: true,
+    name: 'Ainsley Crist',
+    lab_role: 'UROP Wellesley College',
+    bio: 'Ainsley works on multiple sulfur isotope projects for K/Pg boundary sections',
+    img: '/people/AinsleyCrist.jpg',
+  },
+
+  {
     current_member: true,
     name: 'Andy Fong',
     lab_role: 'UROP course 10',
@@ -36,7 +61,7 @@ const people = [
     img: '/people/andyfong.jpg',
     },
   {
-    current_member: true,
+    current_member: false,
     name: 'Bill Olszewski',
     lab_role: 'Research Scientist',
     bio: "Dr. Bill helps with the operation of the lab. He automated the SF<sub>6</sub> GC-IRMS line by using approximately two dozen pneumatic valves and pneumatically operated cold traps that are interfaced by the LabView software. Bill's creativity helps quite a bit in the daily operation of our lab.",

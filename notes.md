@@ -1,4 +1,5 @@
 Git:
+open new terminal in VScode
 
 When you want to edit something but don’t want it to go to main website:
 - make sure you are on main branch `git checkout main`
