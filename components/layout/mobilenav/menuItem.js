@@ -22,15 +22,13 @@ const variants = {
 
 export const MenuItem = ({ item }) => {
   return (
-    <Link href={item.href}>
-      <motion.li
-        variants={variants}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-        className={style.nav_item}
-      >
-        {item.text}
-      </motion.li>
-    </Link>
+    <motion.li
+      variants={variants}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      className={style.nav_item}
+    >
+      <Link href={item.href}>{item.text}</Link>
+    </motion.li>
   );
 };

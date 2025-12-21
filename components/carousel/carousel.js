@@ -113,9 +113,9 @@ const Carousel = () => {
           <Image
             src={images[imageIndex].path}
             alt={images[imageIndex].header}
-            layout='fill'
-            objectFit='cover'
-            loading='eager'
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
           />
         </motion.div>
         <motion.div>

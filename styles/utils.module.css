@@ -4,21 +4,28 @@
 }
 
 .page-header {
-  margin: 2rem 0 1rem 0;
+  margin: 2.5rem 0 1.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.wideGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.25rem;
 }
 
 .smallGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
 }
 
 .paragraph-spacing {

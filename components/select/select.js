@@ -1,7 +1,7 @@
 import utilStyles from '../../styles/utils.module.css';
 import style from './select.module.scss';
 import { useState, useEffect } from 'react';
-import { motion, AnimateSharedLayout } from 'framer-motion';
+import { motion, LayoutGroup } from 'framer-motion';
 
 const Select = ({ options, initial, label, onChange }) => {
   const [selected, setSelected] = useState(initial);
@@ -11,7 +11,7 @@ const Select = ({ options, initial, label, onChange }) => {
   }, [selected]);
 
   return (
-    <AnimateSharedLayout>
+    <LayoutGroup>
       <div className={style.select}>
         <h3>{label}</h3>
         <ul className={style.select_items}>
@@ -27,7 +27,7 @@ const Select = ({ options, initial, label, onChange }) => {
           })}
         </ul>
       </div>
-    </AnimateSharedLayout>
+    </LayoutGroup>
   );
 };
 
