@@ -1,10 +1,10 @@
-import '../styles/globals.css';
+import "../styles/globals.css";
 
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode="wait">
       <Component {...pageProps} />
     </AnimatePresence>
   );

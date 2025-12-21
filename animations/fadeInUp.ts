@@ -1,6 +1,8 @@
-const easing = [0.6, -0.05, 0.01, 0.99];
+import type { Variants } from "framer-motion";
 
-const fadeInUp = {
+const easing = [0.6, -0.05, 0.01, 0.99] as const;
+
+const fadeInUp: Variants = {
   initial: {
     y: 60,
     opacity: 0,
